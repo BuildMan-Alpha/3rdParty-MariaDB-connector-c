@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/cmake/export.cmake
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/cmake/sign.cmake
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/cmake/symlink.cmake
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/libmariadb/CMakeLists.txt
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/libmariadb/ma_client_plugin.c.in
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/win/resource.rc.in

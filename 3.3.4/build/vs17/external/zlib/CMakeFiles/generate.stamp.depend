@@ -1,0 +1,9 @@
+# CMake generation dependency list for this directory.
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/CheckCSourceCompiles.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/CheckFunctionExists.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/CheckIncludeFile.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/CheckIncludeFileCXX.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/CheckTypeSize.cmake
+C:/dev/3rdParty/CMake/3.21.4/share/cmake-3.21/Modules/Internal/CheckSourceCompiles.cmake
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/external/zlib/CMakeLists.txt
+C:/dev/3rdParty/MariaDB/connector-c/3.3.4/external/zlib/zconf.h.cmakein

@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AE09FFE5-1E0A-3D44-A71A-514D9AA6DE53}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.22000.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\3rdParty\OpenSSL\3.1.1\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\external\zlib;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\3rdParty\OpenSSL\3.1.1\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\external\zlib;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\3rdParty\OpenSSL\3.1.1\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\external\zlib;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\dev\3rdParty\OpenSSL\3.1.1\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\external\zlib;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/dev/3rdParty/MariaDB/connector-c/3.3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\dev\3rdParty\CMake\3.21.4\bin\cmake.exe -SC:/dev/3rdParty/MariaDB/connector-c/3.3.4 -BC:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17 --check-stamp-file C:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPack.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckTypeSize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindCURL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindGit.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindOpenSSL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\SelectLibraryConfigurations.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeRCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeSystem.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckFunctions.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckIncludeFiles.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckTypes.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\ConnectorName.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\FindZStd.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\SearchLibrary.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\WindowsCache.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install_plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\libressl_version.c;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\misc.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\sign.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\version_info.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\ma_config.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\mariadb_version.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\connection\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\io\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/dev/3rdParty/MariaDB/connector-c/3.3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\dev\3rdParty\CMake\3.21.4\bin\cmake.exe -SC:/dev/3rdParty/MariaDB/connector-c/3.3.4 -BC:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17 --check-stamp-file C:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPack.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckTypeSize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindCURL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindGit.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindOpenSSL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\SelectLibraryConfigurations.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeRCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeSystem.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckFunctions.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckIncludeFiles.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckTypes.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\ConnectorName.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\FindZStd.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\SearchLibrary.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\WindowsCache.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install_plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\libressl_version.c;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\misc.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\sign.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\version_info.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\ma_config.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\mariadb_version.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\connection\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\io\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/dev/3rdParty/MariaDB/connector-c/3.3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\dev\3rdParty\CMake\3.21.4\bin\cmake.exe -SC:/dev/3rdParty/MariaDB/connector-c/3.3.4 -BC:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17 --check-stamp-file C:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPack.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckTypeSize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindCURL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindGit.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindOpenSSL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\SelectLibraryConfigurations.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeRCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeSystem.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckFunctions.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckIncludeFiles.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckTypes.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\ConnectorName.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\FindZStd.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\SearchLibrary.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\WindowsCache.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install_plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\libressl_version.c;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\misc.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\sign.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\version_info.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\ma_config.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\mariadb_version.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\connection\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\io\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/dev/3rdParty/MariaDB/connector-c/3.3.4/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\dev\3rdParty\CMake\3.21.4\bin\cmake.exe -SC:/dev/3rdParty/MariaDB/connector-c/3.3.4 -BC:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17 --check-stamp-file C:/dev/3rdParty/MariaDB/connector-c/3.3.4/build/vs17/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeRCInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPack.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CPackComponent.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckCSourceCompiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckFunctionExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFile.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFileCXX.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckIncludeFiles.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckLibraryExists.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\CheckTypeSize.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Compiler\MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindCURL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindGit.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindOpenSSL.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageHandleStandardArgs.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPackageMessage.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\FindPkgConfig.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC-C.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\Windows.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Modules\SelectLibraryConfigurations.cmake;C:\dev\3rdParty\CMake\3.21.4\share\cmake-3.21\Templates\CPackConfig.cmake.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeRCCompiler.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\3.21.4\CMakeSystem.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckFunctions.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckIncludeFiles.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\CheckTypes.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\ConnectorName.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\FindZStd.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\SearchLibrary.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\WindowsCache.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\install_plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\libressl_version.c;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\misc.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\plugins.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\sign.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\cmake\version_info.cmake;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\ma_config.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\include\mariadb_version.h.in;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\auth\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\compress\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\connection\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\io\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\plugins\pvio\CMakeLists.txt;C:\dev\3rdParty\MariaDB\connector-c\3.3.4\win\resource.rc.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\ZERO_CHECK.vcxproj">
+      <Project>{70B597AB-1DD7-3546-B7E9-74B8218EF502}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\async.vcxproj">
+      <Project>{B93BF25C-0AC4-34E1-BDB7-0D59B30B6936}</Project>
+      <Name>async</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\basic-t.vcxproj">
+      <Project>{E1517D73-12BA-3147-9A3C-4B48404F2ABE}</Project>
+      <Name>basic-t</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\bulk1.vcxproj">
+      <Project>{B25ED334-3AA8-33FC-946A-EEE289C60993}</Project>
+      <Name>bulk1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\caching_sha2_password.vcxproj">
+      <Project>{6BC3AC0E-1D97-32A6-95DE-22736525692B}</Project>
+      <Name>caching_sha2_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\mytap\cctap.vcxproj">
+      <Project>{E8D6641D-F71E-3CD8-AD4F-C6B321B48393}</Project>
+      <Name>cctap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\charset.vcxproj">
+      <Project>{F3AB1715-88BE-386C-B31A-83ED78CE2450}</Project>
+      <Name>charset</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\client_ed25519.vcxproj">
+      <Project>{B0BBDE7F-B1B0-396B-B366-4B0ACBFE2ABD}</Project>
+      <Name>client_ed25519</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\conc336.vcxproj">
+      <Project>{229D99CC-FEE4-3B26-92E1-3D9CA8263A75}</Project>
+      <Name>conc336</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\connection.vcxproj">
+      <Project>{33DD80CF-89C0-35FD-A8B8-48045609C01F}</Project>
+      <Name>connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\cursor.vcxproj">
+      <Project>{2767C199-0412-36BA-B392-0FCDEA587340}</Project>
+      <Name>cursor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\dialog.vcxproj">
+      <Project>{C532BCAE-A5B9-3B3A-B349-10BA5D3FFDB0}</Project>
+      <Name>dialog</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\dyncol.vcxproj">
+      <Project>{5A681D0C-0902-3F4F-81EB-73DBC650419F}</Project>
+      <Name>dyncol</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\errors.vcxproj">
+      <Project>{3AE824C0-9181-3E90-BF10-FD31080E64F7}</Project>
+      <Name>errors</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\features-10_2.vcxproj">
+      <Project>{B6569F64-B767-367C-A0CF-F741B3630A17}</Project>
+      <Name>features-10_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\fetch.vcxproj">
+      <Project>{550267CD-BF07-3EAC-A1B0-9A8BA6BA923E}</Project>
+      <Name>fetch</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\libmariadb\libmariadb.vcxproj">
+      <Project>{0AF5DE88-AD40-367E-B665-E0B6FAD390A3}</Project>
+      <Name>libmariadb</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\logs.vcxproj">
+      <Project>{71044932-6325-3311-8DFE-40A475429B4E}</Project>
+      <Name>logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\ma_getopt.vcxproj">
+      <Project>{97A78C12-4078-3624-AC16-909C2C472F69}</Project>
+      <Name>ma_getopt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\libmariadb\mariadb_obj.vcxproj">
+      <Project>{EEF29260-4A68-3CDF-B106-6DFF91A2F6A9}</Project>
+      <Name>mariadb_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\libmariadb\mariadbclient.vcxproj">
+      <Project>{D48FEFDF-E5CE-3E42-B771-7163051FF59B}</Project>
+      <Name>mariadbclient</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\misc.vcxproj">
+      <Project>{DCBCF7D1-8790-3BCA-BBD3-A786D9A3C4A2}</Project>
+      <Name>misc</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\mysql_clear_password.vcxproj">
+      <Project>{9A3A916A-E2B2-3957-B416-7385750EDA5B}</Project>
+      <Name>mysql_clear_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\performance.vcxproj">
+      <Project>{BC652D9D-49FF-3025-9134-56743A4E24C6}</Project>
+      <Name>performance</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\ps.vcxproj">
+      <Project>{356F10F9-CCEA-3D74-BBE1-DC1B09B0B14F}</Project>
+      <Name>ps</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\ps_bugs.vcxproj">
+      <Project>{7DCF2C19-F7F7-3229-B669-A5E4118EAF91}</Project>
+      <Name>ps_bugs</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\ps_new.vcxproj">
+      <Project>{DF9238FA-AAD3-3CCF-A59A-F484533E84A9}</Project>
+      <Name>ps_new</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\pvio_npipe.vcxproj">
+      <Project>{AF9A7E4D-1E40-3A48-A9EE-82F04B7AD02F}</Project>
+      <Name>pvio_npipe</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\pvio_shmem.vcxproj">
+      <Project>{F3E1CF62-030F-30EE-8665-7968A2198767}</Project>
+      <Name>pvio_shmem</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\result.vcxproj">
+      <Project>{0CBD9B78-0086-3069-84F5-A04D005602EE}</Project>
+      <Name>result</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\rpl_api.vcxproj">
+      <Project>{9F0C784C-DE1D-38B4-B773-0C7D69439AEC}</Project>
+      <Name>rpl_api</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\sha256_password.vcxproj">
+      <Project>{5850325F-794C-3A8B-A880-55CF4ABE9259}</Project>
+      <Name>sha256_password</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\sp.vcxproj">
+      <Project>{176BC102-BBB7-35CF-86AB-6A31353E98DD}</Project>
+      <Name>sp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\t_conc173.vcxproj">
+      <Project>{9BCF9FFF-CAC8-3153-B3AC-71012294A769}</Project>
+      <Name>t_conc173</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\thread.vcxproj">
+      <Project>{748AD710-56EF-3EEF-81E3-368C77D53857}</Project>
+      <Name>thread</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\dev\3rdParty\MariaDB\connector-c\3.3.4\build\vs17\unittest\libmariadb\view.vcxproj">
+      <Project>{D1E52A07-4236-39AC-881C-B843DF9363B0}</Project>
+      <Name>view</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
